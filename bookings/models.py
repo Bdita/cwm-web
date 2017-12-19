@@ -12,9 +12,9 @@ class Date(models.Model):
 
 class Time(models.Model):
     AVAILABLE_TIMESLOTS = (
-        ('nine_nineAndHalf', '9:00 to 9:30'),
-        ('ten_tenAndHalf', '10:00 to 10:30'),
-        ('eleven_elevenAndHalf', '11:00 to 11:30'),
+        ('9:00 to 9:30', '9:00 to 9:30'),
+        ('10:00 to 10:30', '10:00 to 10:30'),
+        ('11:00 to 11:30', '11:00 to 11:30'),
     )
 
     AVAILABILITY_STATUS = (
@@ -45,7 +45,7 @@ class Booking(models.Model):
     name = models.CharField(max_length=255, null=False, blank=False)
     email = models.EmailField(max_length=255, unique=True, null=False, blank=False)
     description = models.TextField(null=False, blank=False)
-    phone = models.CharField(validators=[PHONE_REGEX], blank=False, max_length=16)
+    phone = models.CharField(max_length=15, null=False, blank=False)
     company_name = models.CharField(max_length=255, null=True, blank=False)
     status = models.CharField(choices=BOOKING_STATUSES, max_length=10, default='new')
     date = models.DateField(null=False, blank=False)

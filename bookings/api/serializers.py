@@ -7,7 +7,7 @@ from ..models import Time
 class BookingSerializer(serializers.ModelSerializer):
     class Meta:
         model = Booking
-        fields = ('id', 'created_at', 'modified_at', 'name', 'email', 'description', 'company_name', 'status', 'date', 'time_slot')
+        fields = ('id', 'created_at', 'modified_at', 'name', 'email', 'description', 'phone', 'company_name', 'status', 'date', 'time_slot')
 
 
 class TimeSerializer(serializers.ModelSerializer):
