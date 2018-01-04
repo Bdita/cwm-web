@@ -17,7 +17,7 @@ class TimeSerializer(serializers.ModelSerializer):
 
 
 class DateSerializer(serializers.ModelSerializer):
-    times = TimeSerializer(many=True, read_only=True)
+    times = TimeSerializer(many=True)
 
     class Meta:
         model = Date
