@@ -19,7 +19,7 @@ class DateAdmin(admin.ModelAdmin):
 
 
 class BookingAdmin(admin.ModelAdmin):
-    list_display = ['id', 'created_at', 'modified_at', 'name', 'email', 'description', 'phone', 'company_name', 'status', 'date', 'time_slot']
+    list_display = ['id', 'created_at', 'modified_at', 'name', 'email', 'description', 'phone', 'company_name', 'status', 'date', 'time_slot', 'meetup_location']
 
 
 admin.site.register(Booking, BookingAdmin)
