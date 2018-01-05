@@ -1,8 +1,9 @@
 from .base import *
+import dj_database_url
 
 DEBUG = False
 
-SECRET_KEY = config('SECRET_KEY')
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # once frontend is deployed
 # ALLOWED_HOSTS = []
