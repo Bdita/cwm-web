@@ -81,6 +81,10 @@ AUTH_PASSWORD_VALIDATORS = [
 
 CORS_ORIGIN_ALLOW_ALL = False
 
+CORS_ORIGIN_WHITELIST = (
+    'https://coffeewithbandita.herokuapp.com',
+)
+
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
