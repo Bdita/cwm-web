@@ -14,3 +14,7 @@ DATABASES = {
         default=os.environ.get('DATABASE_URL')
     )
 }
+
+CORS_ORIGIN_WHITELIST = (
+    'https://coffeewithbandita.herokuapp.com',
+)
