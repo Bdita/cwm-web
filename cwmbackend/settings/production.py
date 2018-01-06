@@ -5,7 +5,7 @@ DEBUG = False
 
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["https://cwmbackend.herokuapp.com"]
 
 DATABASES = {
     'default': dj_database_url.config(
