@@ -79,7 +79,17 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-CORS_ORIGIN_ALLOW_ALL = True
+CORS_ORIGIN_ALLOW_ALL = False
+CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_HEADERS = (
+        'Access-Control-Allow-Origin',
+        'x-requested-with',
+        'content-type',
+        'accept',
+        'origin',
+        'authorization',
+        'x-csrftoken'
+)
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/

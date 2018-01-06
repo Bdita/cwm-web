@@ -15,6 +15,7 @@ DATABASES = {
     )
 }
 
+
 CORS_ORIGIN_WHITELIST = (
     'https://coffeewithbandita.herokuapp.com/booking',
 )
