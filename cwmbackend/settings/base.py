@@ -82,7 +82,6 @@ AUTH_PASSWORD_VALIDATORS = [
 CORS_ORIGIN_ALLOW_ALL = False
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOW_HEADERS = (
-        'Access-Control-Allow-Origin',
         'x-requested-with',
         'content-type',
         'accept',
