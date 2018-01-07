@@ -11,7 +11,7 @@ ALLOWED_HOSTS = [".herokuapp.com"]
 # CORS_ORIGIN_WHITELIST = (
 #     'https://coffeewithbandita.herokuapp.com',
 # )
-# what to do with production database
+
 DATABASES = {
     'default': dj_database_url.config(
         default=os.environ.get('DATABASE_URL')
